@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakQ</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-dark bg-dark justify-content-center">
+        <a class="navbar-brand" href="#">BreakQ</a>
+      </nav>
+      <br>
+      <div class="content" id="content">
+        <br>
+        <div class="row row-cols-4 row-cols-md-6">
+        <div class="col mb-4"  id="">
+            <div class="card h-80" >
+          <h1><%=data.productName%></h1>
+          <h3><%=data.productCost%></h3>
+          <h3><%=data.productBrand%></h3>
+          <p><%=data.productCategory%></p>
+          <p><%=data.productAvailability%></p>
+          <p><%=data.productColor%></p>
+          <p><%=data.productLaunchDate%></p>
+          <p><%=data.productSummary%></p>
+
+        </div> 
+          </div> 
+        </div>
+      </div>
+   <button class="btn btn-primary justify-content-center" onclick="back()"> Back</button>
+   <script>
+    function back(){
+      window.location.href = "/";
+    }
+     
+  </script>
+      <style>
+         body{
+            background-color:orange;
+            padding:50px;
+        }
+      </style>
+    
+      
+</body>
+</html>
